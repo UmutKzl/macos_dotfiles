@@ -1,4 +1,7 @@
 local o = vim.opt
+local g = vim.g
+
+g.mapleader = " "
 
 o.number = true
 o.relativenumber = true
@@ -13,3 +16,5 @@ o.autoindent = true
 o.showmode = false
 
 o.clipboard = "unnamedplus"
+
+o.updatetime = 300
