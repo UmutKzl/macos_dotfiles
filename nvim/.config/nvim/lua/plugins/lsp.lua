@@ -39,6 +39,25 @@ vim.lsp.config["clangd"] = {
 	root_markers = { "compile_commands.json", "compile_flags.txt", "CMakeLists.txt", ".git" },
 	settings = {},
 }
+
+vim.lsp.config["rust-analyzer"] = {
+	cmd = { "rust-analyzer" },
+	filetypes = { "rust" },
+	root_markers = { "Cargo.toml", "Cargo.lock", ".git" },
+	settings = {
+		["rust-analyzer"] = {
+			cargo = {
+				allFeatures = true,
+				buildScripts = { enable = true },
+			},
+			checkOnSave = true,
+			check = {
+				command = "clippy",
+			},
+			procMacro = { enable = true },
+		},
+	},
+}
 -- }}}
 
 -- Diagnostics on Hover {{{
@@ -55,3 +74,4 @@ vim.api.nvim_create_autocmd("CursorHold", {
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("basedpyright")
 vim.lsp.enable("clangd")
+vim.lsp.enable("rust-analyzer")
