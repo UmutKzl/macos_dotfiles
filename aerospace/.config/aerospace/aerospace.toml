@@ -20,6 +20,8 @@ exec-on-workspace-change = ['/bin/bash', '-c',
 [mode.main.binding]
     cmd-enter = 'exec-and-forget open -na /Applications/Ghostty.app'
 
+    cmd-shift-enter = 'exec-and-forget neovide --frame buttonless --title-hidden'
+
 
     # i3 wraps focus by default
     cmd-h =         'focus --boundaries-action wrap-around-the-workspace left'
