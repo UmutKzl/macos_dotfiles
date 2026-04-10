@@ -16,11 +16,13 @@ map("n", "<leader>ic", function()
 	Snacks.picker.diagnostics()
 end, { desc = "Diagnostics" })
 
+map("n", "<leader>lg", function()
+	Snacks.LazyGit()
+end, { desc = "Diagnostics" })
+
 map("n", "<leader>xx", function()
 	require("Trouble").toggle("diagnostics")
 end, { desc = "Trouble.nvim" })
-
-map("n", "<leader>lg", ":LazyGit <CR>", { desc = "LazyGit", silent = true })
 
 map("n", "<ESC><ESC>", ":nohlsearch<CR>", { silent = true })
 

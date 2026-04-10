@@ -1,8 +1,5 @@
 vim.pack.add({
 	"https://github.com/folke/snacks.nvim",
-
-	"https://github.com/kdheepak/lazygit.nvim",
-	"https://github.com/nvim-lua/plenary.nvim",
 })
 
 require("Snacks").setup({
@@ -17,4 +14,5 @@ require("Snacks").setup({
 	scroll = { enabled = true },
 	statuscolumn = { enabled = true },
 	words = { enabled = true },
+	lazygit = { enabled = true },
 })
