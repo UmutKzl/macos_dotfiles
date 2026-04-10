@@ -6,6 +6,9 @@ vim.pack.add({
 	"https://github.com/nvim-lualine/lualine.nvim",
 	"https://github.com/nvim-tree/nvim-web-devicons",
 
+	"https://github.com/akinsho/bufferline.nvim",
+	"https://github.com/nvim-tree/nvim-web-devicons",
+
 	"https://github.com/mofiqul/dracula.nvim",
 })
 
@@ -82,4 +85,8 @@ require("lualine").setup({
 	inactive_winbar = {},
 	extensions = {},
 })
+-- }}}
+
+-- bufferline.nvim {{{
+require("bufferline").setup({})
 -- }}}
