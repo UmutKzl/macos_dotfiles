@@ -6,6 +6,9 @@ vim.pack.add({
 	"https://github.com/folke/trouble.nvim",
 
 	"https://github.com/folke/which-key.nvim",
+
+	"https://github.com/saghen/blink.cmp",
+	"https://github.com/rafamadriz/friendly-snippets",
 })
 
 -- nvim-autopairs {{{
@@ -37,5 +40,27 @@ require("which-key").setup({
 	preset = "helix",
 
 	spec = {},
+})
+-- }}}
+
+-- blink.cmp {{{
+require("blink.cmp").setup({
+	keymap = { preset = "super-tab" },
+
+	appearance = {
+		nerd_font_variant = "normal",
+	},
+
+	completion = {
+		documentation = { auto_show = false },
+	},
+
+	sources = {
+		default = { "lsp", "path", "snippets", "buffer" },
+	},
+
+	fuzzy = {
+		implementation = "lua",
+	},
 })
 -- }}}
