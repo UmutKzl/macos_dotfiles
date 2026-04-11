@@ -60,17 +60,6 @@ vim.lsp.config["rust-analyzer"] = {
 }
 -- }}}
 
--- Diagnostics on Hover {{{
-vim.api.nvim_create_autocmd("CursorHold", {
-	callback = function()
-		vim.diagnostic.open_float(nil, {
-			focus = false,
-			scope = "cursor",
-		})
-	end,
-})
--- }}}
-
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("basedpyright")
 vim.lsp.enable("clangd")

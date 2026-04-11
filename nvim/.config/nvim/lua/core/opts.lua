@@ -38,6 +38,10 @@ o.showmode = false
 o.updatetime = 250
 -- }}}
 
+-- Confirm instead of adding ! {{{
+o.confirm = true
+-- }}}
+
 -- Neovide {{{
 if vim.g.neovide then
 	vim.o.guifont = "JetBrainsMono Nerd Font:h16"
@@ -45,5 +49,5 @@ end
 -- }}}
 
 -- Colorscheme {{{
-cmd.colorscheme("dracula")
+cmd.colorscheme("tokyonight-night")
 -- }}}
