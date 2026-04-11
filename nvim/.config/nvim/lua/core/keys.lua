@@ -26,16 +26,10 @@ end, { desc = "Trouble.nvim" })
 
 map("n", "<ESC><ESC>", ":nohlsearch<CR>", { silent = true })
 
-map("n", "<C-h>", "<cmd><C-U>TmuxNavigateLeft<cr>")
-map("n", "<C-j>", "<cmd><C-U>TmuxNavigateDown<cr>")
-map("n", "<C-k>", "<cmd><C-U>TmuxNavigateUp<cr>")
-map("n", "<C-l>", "<cmd><C-U>TmuxNavigateRight<cr>")
-
--- Vanilla Navigation
--- map("n", "<C-h>", "<C-w><C-h>")
--- map("n", "<C-j>", "<C-w><C-j>")
--- map("n", "<C-k>", "<C-w><C-k>")
--- map("n", "<C-l>", "<C-w><C-l>")
+map("n", "<C-h>", "<C-w><C-h>")
+map("n", "<C-j>", "<C-w><C-j>")
+map("n", "<C-k>", "<C-w><C-k>")
+map("n", "<C-l>", "<C-w><C-l>")
 
 map("n", "H", ":bprev <CR>", { silent = true })
 map("n", "L", ":bnext <CR>", { silent = true })
