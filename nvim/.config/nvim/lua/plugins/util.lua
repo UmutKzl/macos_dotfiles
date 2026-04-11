@@ -1,4 +1,6 @@
 vim.pack.add({
+	"https://github.com/christoomey/vim-tmux-navigator",
+
 	"https://github.com/folke/snacks.nvim",
 })
 
