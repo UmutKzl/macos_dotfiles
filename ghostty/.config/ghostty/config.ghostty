@@ -1,6 +1,6 @@
 clipboard-read = allow
 confirm-close-surface = false
-command = tmux
+command = zellij
 theme = Dracula
 background-opacity = 0.9
 background = #282a36
