@@ -1,6 +1,6 @@
 clipboard-read = allow
 confirm-close-surface = false
-command = zellij
+# command = /opt/homebrew/bin/zellij
 theme = Dracula
 background-opacity = 0.9
 background = #282a36
@@ -28,7 +28,7 @@ palette = 12=#d6acff
 palette = 13=#ff92df
 palette = 14=#a4ffff
 palette = 15=#ffffff
-macos-titlebar-style = hidden
+# macos-titlebar-style = hidden
 macos-option-as-alt = left
-macos-shortcuts = deny
-macos-icon = xray
+# macos-shortcuts = deny
+# macos-icon = xray
