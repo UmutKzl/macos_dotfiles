@@ -1,5 +1,8 @@
 # dots
 
+> [!WARNING]
+> I don't work on this project. If you want to customize your macOS, you can use [mmosga](https://github.com/UmutKzl/mmosga).
+
 ## Installation
 
 ```bash
